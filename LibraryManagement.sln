@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Api", "LibraryManagement\LibraryManagement.Api.csproj", "{2AE2A895-1706-4E41-9A29-602434D4E1CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{E23F11DE-A68F-4D77-91FC-C429D0A27294}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{E13A64A4-B01F-4F44-8123-5FAAE0233107}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C2B75827-FA15-40B5-AB0E-C6AEC19BDDB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{806A64FD-98CA-4B9B-B57E-8D983F532206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Application", "LibraryManagement.Application\LibraryManagement.Application.csproj", "{A26782CA-2E8A-45DC-822D-C1B92D2BE1F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Domain", "LibraryManagement.Domain\LibraryManagement.Domain.csproj", "{63412858-4887-4652-9F3A-6DD7FFB458FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Infrastructure", "LibraryManagement.Infrastructure\LibraryManagement.Infrastructure.csproj", "{39A2B2BF-A7DF-403A-9859-A5E78ACBD072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Persistance", "LibraryManagement.Persistance\LibraryManagement.Persistance.csproj", "{9A0F4B4B-2A7A-4B81-A2BC-7164F6275509}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AE2A895-1706-4E41-9A29-602434D4E1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE2A895-1706-4E41-9A29-602434D4E1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE2A895-1706-4E41-9A29-602434D4E1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE2A895-1706-4E41-9A29-602434D4E1CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A26782CA-2E8A-45DC-822D-C1B92D2BE1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A26782CA-2E8A-45DC-822D-C1B92D2BE1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A26782CA-2E8A-45DC-822D-C1B92D2BE1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A26782CA-2E8A-45DC-822D-C1B92D2BE1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63412858-4887-4652-9F3A-6DD7FFB458FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63412858-4887-4652-9F3A-6DD7FFB458FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63412858-4887-4652-9F3A-6DD7FFB458FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63412858-4887-4652-9F3A-6DD7FFB458FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A2B2BF-A7DF-403A-9859-A5E78ACBD072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A2B2BF-A7DF-403A-9859-A5E78ACBD072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A2B2BF-A7DF-403A-9859-A5E78ACBD072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A2B2BF-A7DF-403A-9859-A5E78ACBD072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A0F4B4B-2A7A-4B81-A2BC-7164F6275509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0F4B4B-2A7A-4B81-A2BC-7164F6275509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A0F4B4B-2A7A-4B81-A2BC-7164F6275509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A0F4B4B-2A7A-4B81-A2BC-7164F6275509}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2AE2A895-1706-4E41-9A29-602434D4E1CA} = {E23F11DE-A68F-4D77-91FC-C429D0A27294}
+		{E23F11DE-A68F-4D77-91FC-C429D0A27294} = {E13A64A4-B01F-4F44-8123-5FAAE0233107}
+		{C2B75827-FA15-40B5-AB0E-C6AEC19BDDB5} = {E13A64A4-B01F-4F44-8123-5FAAE0233107}
+		{806A64FD-98CA-4B9B-B57E-8D983F532206} = {E13A64A4-B01F-4F44-8123-5FAAE0233107}
+		{A26782CA-2E8A-45DC-822D-C1B92D2BE1F7} = {C2B75827-FA15-40B5-AB0E-C6AEC19BDDB5}
+		{63412858-4887-4652-9F3A-6DD7FFB458FE} = {C2B75827-FA15-40B5-AB0E-C6AEC19BDDB5}
+		{39A2B2BF-A7DF-403A-9859-A5E78ACBD072} = {806A64FD-98CA-4B9B-B57E-8D983F532206}
+		{9A0F4B4B-2A7A-4B81-A2BC-7164F6275509} = {806A64FD-98CA-4B9B-B57E-8D983F532206}
+	EndGlobalSection
+EndGlobal
