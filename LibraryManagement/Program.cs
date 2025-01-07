@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Builder;
 using LibraryManagement.Persistance.Repository;
 using LibraryManagement.Application.Interface;
 using LibraryManagement.Application.Handler.AuthorFeature.Query;
+using LibraryManagement.Application.Handler.GenericFeature.GenericQuery;
+using LibraryManagement.Domain.Entities;
 namespace LibraryManagement
 {
     public class Program
@@ -26,6 +28,7 @@ namespace LibraryManagement
             //builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(GetAuthorByIdQueryHandler).Assembly));
             builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
             builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+            builder.Services.AddTransient<IRequestHandler<GetByIdGenericQuery<Author>, Author>, GetByIdGenericQueryHandler<Author>>();
             builder.Services.AddControllers();
 
 
