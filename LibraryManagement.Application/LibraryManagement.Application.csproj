@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <Folder Include="Handler\BookFeature\" />
-    <Folder Include="Handler\GenericFeature\GenericCommand\" />
   </ItemGroup>
 
 </Project>

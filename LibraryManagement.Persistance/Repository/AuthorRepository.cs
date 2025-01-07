@@ -36,13 +36,13 @@ namespace LibraryManagement.Persistance.Repository
         //    //var returnData = mapper.Map<AuthorDto>(data);
         //    return data;
         //}
-        public async Task<Unit> AddAuthorAsync(Author author)
-        {
+        //public async Task<Unit> AddAuthorAsync(Author author)
+        //{
             
-            await _dbContext.Authors.AddAsync(author);
-            await _dbContext.SaveChangesAsync();
-            return Unit.Value;
-        }
+        //    await _dbContext.Authors.AddAsync(author);
+        //    await _dbContext.SaveChangesAsync();
+        //    return Unit.Value;
+        //}
 
         public async Task<Author> DeleteAuthorByIdAsync(int id)
         {

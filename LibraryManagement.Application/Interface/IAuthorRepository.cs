@@ -13,7 +13,7 @@ namespace LibraryManagement.Application.Interface
     {
         Task<IEnumerable<Author>> GetAllAuthorsAsync();
         //Task<Author> GetAuthorByIdAsync(int id);
-        Task<Unit> AddAuthorAsync(Author author);
+        //Task<Author> AddAuthorAsync(Author author);
         Task<Author> DeleteAuthorByIdAsync(int id);
         Task<Author> UpdateAuthorAsync(Author author, int id);
 

@@ -7,16 +7,16 @@ using LibraryManagement.Application.DTO;
 using LibraryManagement.Domain.Entities;
 using MediatR;
 
-namespace LibraryManagement.Application.Handler.AuthorFeature.Command
+namespace LibraryManagement.Application.Handler.GenericFeature.GenericCommand
 {
-    public class AddAuthorCommand : IRequest<Unit>
+    public class AddGenericCommand<TEntity, TDto> : IRequest<TDto>
     {
         //private Author author;
-        public Author _author;
+        public TDto EntityDto;
 
-        public AddAuthorCommand(Author author)
+        public AddGenericCommand(TDto entityDto)
         {
-            _author = author;
+            this.EntityDto = entityDto;
         }
 
     }

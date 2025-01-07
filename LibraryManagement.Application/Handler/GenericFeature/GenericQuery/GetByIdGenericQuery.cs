@@ -12,6 +12,7 @@ namespace LibraryManagement.Application.Handler.GenericFeature.GenericQuery
         public int _id;
         public GetByIdGenericQuery(int id)
         {
+            Console.WriteLine("request");
             _id = id;
         }
     }

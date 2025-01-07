@@ -2,6 +2,7 @@
 using LibraryManagement.Application.DTO;
 using LibraryManagement.Application.Handler.AuthorFeature.Command;
 using LibraryManagement.Application.Handler.AuthorFeature.Query;
+using LibraryManagement.Application.Handler.GenericFeature.GenericCommand;
 using LibraryManagement.Application.Handler.GenericFeature.GenericQuery;
 using LibraryManagement.Domain.Entities;
 using MediatR;
@@ -35,6 +36,7 @@ namespace LibraryManagement.Api.Controllers
         [Route("{id}")]
         public async Task<IActionResult> GetAuthorBYIdAsync([FromRoute] int id)
         {
+            Console.WriteLine("controller");
             var result = await _mediator.Send(new GetByIdGenericQuery<Author>(id));
             var returnResult = _mapper.Map<AuthorDto>(result);
             return Ok(returnResult);
@@ -42,8 +44,8 @@ namespace LibraryManagement.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> AddAuthorAsync([FromBody] AuthorDto authorDto)
         {
-            var author = _mapper.Map<Author>(authorDto);
-            var result = await _mediator.Send(new AddAuthorCommand(author));
+            //var author = _mapper.Map<Author>(authorDto);
+            var result = await _mediator.Send(new AddGenericCommand<Author, AuthorDto>(authorDto));
             return Ok(authorDto);
         }
         [HttpDelete("{id}")]
